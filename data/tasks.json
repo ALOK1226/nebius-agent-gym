@@ -1,0 +1,16 @@
+[
+  {
+    "task_id": "task_1",
+    "title": "Fix Even Numbers Sum",
+    "description": "Fix the function to correctly calculate the sum of all even numbers in a given list.",
+    "buggy_code": "def sum_evens(numbers):\n    # Bug: checking odd instead of even\n    return sum(x for x in numbers if x % 2 == 1)",
+    "test_code": "def test_sum_evens():\n    assert sum_evens([1, 2, 3, 4, 5, 6]) == 12\n    assert sum_evens([1, 3, 5]) == 0\n    assert sum_evens([2, 4, 8]) == 14\n"
+  },
+  {
+    "task_id": "task_2",
+    "title": "Fix String Reversal",
+    "description": "Fix the function so it properly reverses a given string.",
+    "buggy_code": "def reverse_string(s):\n    # Bug: returns original string\n    return s",
+    "test_code": "def test_reverse_string():\n    assert reverse_string('hello') == 'olleh'\n    assert reverse_string('ai') == 'ia'\n    assert reverse_string('') == ''\n"
+  }
+]
